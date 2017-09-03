@@ -18,6 +18,49 @@ body {
 
 }
 
+.carousel-caption {
+    top: 80;
+    left: -1000;
+    bottom: auto;
+    text-decoration: none;
+    color: black;
+    font-weight:900;
+    
+    
+}
+
+#carouselCaptionA {
+
+    color: #000033;
+    font-weight:2000;
+    font-size: 44px;
+     
+    
+    
+}
+#carouselCaptionB {
+    margin-top: -25;
+    color: #ffff00;
+    margin-left: ;
+    font-weight:2000;
+    font-size: 44px;
+    
+    
+}
+
+#carouselCaptionC {
+    margin-top: -25;
+    margin-left: 79;
+    color: #660000;
+    font-weight:4000;
+    font-stretch: semi-expanded;
+    font-size: 44px;
+     
+    
+    
+}
+
+
  .carousel .item {
  }
  .carousel .item img {
@@ -130,15 +173,27 @@ body {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
+/*
+@media only screen and (max-width: 450px) { 
+  #mysidenav { 
+    display: none;
+    
+  }
+#main{
+        
+    
+    }
+    
+} */
 
 /* TABLE CLASSES */ 
 #q-graph {
   display: block;
   /* fixes layout wonkiness in FF1.5 */
-  position: relative;
+  position:relative;
   width: 600px;
-  height: 300px;
-  margin: 1.1em 0 0;
+  height: 300px; 
+/*  margin: 1.1em 0 0; */
   padding: 0;
   background: transparent;
   font-size: 11px;
@@ -179,13 +234,13 @@ body {
   left: 100%;
   top: 50%;
   bottom: auto;
-  margin: -2.5em 0 0 5em;
+  margin: -2.5em 0 0 5em; 
 }
 
 #q-graph thead th {
   width: 7.5em;
   height: auto;
-  padding: 0.5em 1em;
+  padding: 0.5em 1em; 
 }
 
 #q-graph thead th.sent {
@@ -196,6 +251,12 @@ body {
 
 #q-graph thead th.paid {
   top: 2.75em;
+  line-height: 2;
+  left: 0;
+}
+
+#q-graph thead th.luxury {
+  top: 5.5em;
   line-height: 2;
   left: 0;
 }

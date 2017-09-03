@@ -15,28 +15,43 @@
     
 }
 
-.info-graphic-content h4 {
+
+
+/* These will be individually customized per content box*/
+
+.info-graphic-content__firstBox h4 {
     font-family:"Noto Sans", Helvetica, Arial, sans-serif;
-font-weight:400;
+font-weight:800;
+    font-size: 40px;
 color:#0087be;
+
 text-align:center;
-padding:8px 0 0;
+    margin-top: -20px;
+}
+
+.info-graphic-content__firstBox h5 {
+    font-family:"Noto Sans", Helvetica, Arial, sans-serif;
+font-weight:600;
+font-size:16px;
+color:#0087be;
+    font-style: italic;
+text-align:center;
+    padding-top: -5px;
+    margin-top: -13px;
+    line-height: 1.5;
 }
 
 
-
-.info-graphic-content p {
+.info-graphic-content__firstBox p {
     min-height:0;
-font-size:18px;
+font-size:15px;
 font-weight:600;
 line-height:1.5;
-color:#87a6bc!important;
+color:#0087be!important;
 padding:0;
-
     
 }
 
-/* These will be individually customized per content box*/
 
 .info-graphic-content__firstBox{
     border-bottom: 2px solid blue;
@@ -53,9 +68,150 @@ padding:0;
     background-size: 72px 72px;
     margin: 0 auto;
     
+    
 }
 
 .info-graphic-content__firstBox__firstBoxImage{
-    background-image:url(icon.png);
+    background-image:url(firstImage.png);
     
 }
+
+/*Second Box*/
+
+.info-graphic-content__secondBox h4 {
+    font-family:"Noto Sans", Helvetica, Arial, sans-serif;
+font-weight:800;
+    font-size: 40px;
+color:green;
+
+text-align:center;
+    margin-top: -20px;
+}
+
+.info-graphic-content__secondBox h5 {
+    font-family:"Noto Sans", Helvetica, Arial, sans-serif;
+font-weight:600;
+font-size:16px;
+color:green;
+    font-style: italic;
+text-align:center;
+    padding-top: -5px;
+    margin-top: -13px;
+    line-height: 1.5;
+}
+
+
+.info-graphic-content__secondBox p {
+    min-height:0;
+font-size:15px;
+font-weight:600;
+line-height:1.5;
+color:green;
+padding:0;
+    
+}
+
+.info-graphic-content__secondBox{
+    border-bottom: 2px solid green;
+    
+}
+
+
+.info-graphic-content__secondBox__secondBoxImage{
+    background-image:url(secondImage.png);
+    
+}
+
+
+/*third Box*/
+
+.info-graphic-content__thirdBox h4 {
+    font-family:"Noto Sans", Helvetica, Arial, sans-serif;
+font-weight:800;
+    font-size: 40px;
+color:darkorange;
+
+text-align:center;
+    margin-top: -20px;
+}
+
+.info-graphic-content__thirdBox h5 {
+    font-family:"Noto Sans", Helvetica, Arial, sans-serif;
+font-weight:600;
+font-size:16px;
+color:darkorange;
+    font-style: italic;
+text-align:center;
+    padding-top: -5px;
+    margin-top: -13px;
+    line-height: 1.5;
+}
+
+
+.info-graphic-content__thirdBox p {
+    min-height:0;
+font-size:15px;
+font-weight:600;
+line-height:1.5;
+color:darkorange;
+padding:0;
+    
+}
+
+.info-graphic-content__thirdBox{
+    border-bottom: 2px solid darkorange;
+    
+}
+
+
+.info-graphic-content__thirdBox__thirdBoxImage{
+    background-image:url(thirdImage.png);
+    
+}
+
+/*fourth Box*/
+
+.info-graphic-content__fourthBox h4 {
+    font-family:"Noto Sans", Helvetica, Arial, sans-serif;
+font-weight:800;
+    font-size: 40px;
+color:salmon;
+
+text-align:center;
+    margin-top: -20px;
+}
+
+.info-graphic-content__fourthBox h5 {
+    font-family:"Noto Sans", Helvetica, Arial, sans-serif;
+font-weight:600;
+font-size:16px;
+color:salmon;
+    font-style: italic;
+text-align:center;
+    padding-top: -5px;
+    margin-top: -13px;
+    line-height: 1.5;
+}
+
+
+.info-graphic-content__fourthBox p {
+    min-height:0;
+font-size:15px;
+font-weight:600;
+line-height:1.5;
+color:salmon;
+padding:0;
+    
+}
+
+.info-graphic-content__fourthBox{
+    border-bottom: 2px solid salmon;
+    
+}
+
+
+.info-graphic-content__fourthBox__fourthBoxImage{
+    background-image:url(fourthImage.png);
+    
+}
+
