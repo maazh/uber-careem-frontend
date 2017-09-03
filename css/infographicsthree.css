@@ -1,0 +1,61 @@
+.info-graphic {
+    position: relative;
+    width: 100%;
+    background-color: navajowhite;
+    box-shadow: 0px 0px 0px 1px rgba(255,255,255,0.4);
+    
+}
+
+
+.info-graphic-content {
+    position: relative;
+    background: #FFF;
+    text-align: center;
+    padding: 36px 16px 16px;
+    
+}
+
+.info-graphic-content h4 {
+    font-family:"Noto Sans", Helvetica, Arial, sans-serif;
+font-weight:400;
+color:#0087be;
+text-align:center;
+padding:8px 0 0;
+}
+
+
+
+.info-graphic-content p {
+    min-height:0;
+font-size:18px;
+font-weight:600;
+line-height:1.5;
+color:#87a6bc!important;
+padding:0;
+
+    
+}
+
+/* These will be individually customized per content box*/
+
+.info-graphic-content__firstBox{
+    border-bottom: 2px solid blue;
+    
+}
+
+.info-graphic-content .info-graphic__topImage{
+    position: absolute;
+    top: -36px;
+    left: 0;
+    right: 0;
+    width: 72px;
+    height: 72px;
+    background-size: 72px 72px;
+    margin: 0 auto;
+    
+}
+
+.info-graphic-content__firstBox__firstBoxImage{
+    background-image:url(icon.png);
+    
+}

@@ -1,0 +1,306 @@
+.navbar-inverse {
+  background-color: #512DA8; }
+
+.navbar{
+    height: 150px;
+    
+}
+
+body {
+    padding: 0px 0px 0px 0px;
+    z-index: 0; 
+    margin: 0;
+       /*done for image to prevent horizontal scroll bar*/
+
+    overflow-x: hidden;
+    
+    /* */
+
+}
+
+ .carousel .item {
+ }
+ .carousel .item img {
+    max-width: 100%;
+    max-height: 100%;
+ }
+ .container {
+   width: 100%;
+
+ }
+
+
+
+.row-content {
+  margin: 0px auto;
+  padding: 50px 0px;
+  border-bottom: 1px ridge;
+  min-height: 400px; 
+
+}
+
+.footer {
+  background-color: #D1C4E9;
+  margin: 0px auto;
+  padding: 20px 0px; }
+
+.jumbotron {
+  
+  background: #9575CD;
+  color: floralwhite; }
+
+.bosom-none {
+    margin-right: -15px; 
+    margin-left: -15px;  
+}
+
+.no-spacing-a {
+    margin-left: -15px;
+    padding-left: 0;
+    margin-right: -15px;
+    padding-right: 0;
+    
+}
+
+
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.sidenav img {
+    
+    width: 70%;
+    vertical-align: middle;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+#logoImage{
+    
+    padding-bottom: 20%;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+/* IMPORTANT PADDNG: 20PX BELOW LOOKS SPLENDING TOO. TRY LATER */
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 0px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/* TABLE CLASSES */ 
+#q-graph {
+  display: block;
+  /* fixes layout wonkiness in FF1.5 */
+  position: relative;
+  width: 600px;
+  height: 300px;
+  margin: 1.1em 0 0;
+  padding: 0;
+  background: transparent;
+  font-size: 11px;
+}
+
+#q-graph caption {
+  caption-side: top;
+  width: 600px;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  top: -40px;
+  position: relative;
+  z-index: 10;
+  font-weight: bold;
+}
+
+#q-graph tr, #q-graph th, #q-graph td {
+  position: absolute;
+  bottom: 0;
+  width: 150px;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#q-graph td {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+#q-graph td:hover {
+  background-color: #4d4d4d;
+  opacity: .9;
+  color: white;
+}
+
+#q-graph thead tr {
+  left: 100%;
+  top: 50%;
+  bottom: auto;
+  margin: -2.5em 0 0 5em;
+}
+
+#q-graph thead th {
+  width: 7.5em;
+  height: auto;
+  padding: 0.5em 1em;
+}
+
+#q-graph thead th.sent {
+  top: 0;
+  left: 0;
+  line-height: 2;
+}
+
+#q-graph thead th.paid {
+  top: 2.75em;
+  line-height: 2;
+  left: 0;
+}
+
+
+
+#q-graph tbody tr {
+  height: 296px;
+  padding-top: 2px;
+  border-right: 1px dotted #C4C4C4;
+  color: #AAA;
+}
+
+#q-graph #q1 {
+  left: 0;
+}
+
+#q-graph #q2 {
+  left: 130px;
+}
+
+#q-graph #q3 {
+  left: 260px;
+}
+
+#q-graph #q4 {
+  left: 390px;
+  border-right: none;
+}
+
+#q-graph tbody th {
+  bottom: -1.75em;
+  vertical-align: top;
+  font-weight: normal;
+  color: #333;
+}
+
+#q-graph .bar {
+  width: 30px;
+  border: 1px solid;
+  border-bottom: none;
+  color: #000;
+}
+
+#q-graph .bar p {
+  margin: 5px 0 0;
+  padding: 0;
+  opacity: .4;
+}
+
+#q-graph .sent {
+  left: 13px;
+  background-color: #39cccc;
+  border-color: transparent;
+}
+
+#q-graph .paid {
+  left: 46px;
+  background-color: #7fdbff;
+  border-color: transparent;
+}
+
+#q-graph .luxury {
+  left: 79px;
+  background-color: #0797dd;
+  border-color: transparent;
+}
+
+#ticks {
+  position: relative;
+  top: -300px;
+  left: 2px;
+  width: 596px;
+  height: 300px;
+  z-index: 1;
+  margin-bottom: -300px;
+  font-size: 10px;
+  font-family: "fira-sans-2", Verdana, sans-serif;
+    
+}
+
+#ticks .tick {
+  position: relative;
+  border-bottom: 1px dotted #C4C4C4;
+  width: 600px;
+    
+}
+
+#ticks .tick p {
+  position: absolute;
+  left: -5em;
+  top: -0.8em;
+  margin: 0 0 0 0.5em;
+}
+
+/* Thumbnail images for family acatar*/
+.thumbnail {
+    position: relative;
+    padding: 0px;
+    
+    
+}
+
+
+.thumbnail img {
+    width: 100%;
+    margin-bottom: 0px;
+}
