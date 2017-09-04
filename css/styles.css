@@ -365,3 +365,32 @@ body {
     width: 100%;
     margin-bottom: 0px;
 }
+
+
+.past-rides h1 {
+    font-size: 21;
+    font-weight:500;
+    line-height:1.5;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    
+}
+
+.past-rides h2 {
+    font-size: 15;
+    font-weight:400;
+    line-height:1.5;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    
+}
+
+.past-rides h3 {
+    font-size: 12;
+    font-weight:400;
+    line-height:1.5;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    
+}
+
