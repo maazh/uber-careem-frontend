@@ -1,34 +1,25 @@
 <html>
-
     <head>
             <!-- Required meta tags always come first -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <script src="conic-gradient.js"></script>
         
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="node_modules/css/bootstrap-social.css">
-        <link href="css/styles.css" rel="stylesheet">
-      <!--  <link href="css/infographicstwo.css" rel="stylesheet"> -->
-        <link href="css/infographicsthree.css" rel="stylesheet">
-        
+        <link href="css/styles.css" rel="stylesheet">        
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Capstone project | Settings</title>
         
     </head>
-
-    <body onload="openNav()">
-        
+    <!-- The onload with trigger the navigation bar on the right to open. -->
+    <body onload="openNav()">        
         <div id="mySidenav" class="sidenav">
-                
+            <!-- Navigation bar image is the avatar/image of the current user of the account -->
             <img id="logoImage" src="img/me.jpg" class="img-responsive rounded-circle" alt="Profile logo"  >
-            
-
-            <h5 class="px-4" style="text-align:center; color:white; margin-top:-25; line-height: 1.25;">Hi Maaz,<br><small> Your current credit is</small> <br><h3 style="text-align:center; color:white;">PKR 2000.</h3></h5>
-            
+            <!-- Welcome message, along with information of the credits avaliable in the users account -->
+            <h5 class="px-4" style="text-align:center; color:white; margin-top:-25; line-height: 1.25;">Hi Maaz,<br><small> Your current credit is</small> <br><h3 style="text-align:center; color:salmon;">PKR 2000.</h3></h5>
             <h5 class="px-4" style="text-align:center; color:white; margin-top:-25; margin-bottom:20px; line-height: 1.25;"><br><small> Click <em>here</em> to update.</small></h5>
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
           <a href="index.html">Home</a>
@@ -37,17 +28,18 @@
           <a href="copyright.html">Copyright</a>
         </div>
 
-        <!-- Use any element to open the sidenav 
-        <span onclick="openNav()">open</span>-->
-
-        <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-        
-        
-        <div id="main">
+    <!--This div "main" contains all the content of the website apart from the navigation bar. It needs to be seperatly
+    created so that the navigation bar is independent from the content-->                    
+    <div id="main">
+            <!--Settings page form begins. The idea being that changing the text of this form will make cause immediate user
+                account changes to occur in the web-app--> 
                 
+        <!--Having done away with the top slider. This allows the page to have a clean and minamlist design.-->
         <div class="container" style="background:#000033">
-            <div class="row row-content">
+            <div class="row row-content " style="">
                 <div class="col- ml-5 mt-4">
+                    <!--Change your profile image. Ideally, just by click. Right now this interaction has not been added. 
+                        The focus is to create a front-end design right now.-->
                     <img src="img/me.jpg" class="img-responsive rounded-circle" alt="Profile logo" width="150">
                 </div>    
                 <div class="col">
@@ -116,11 +108,18 @@
                         </div>
 
                         <div class="form-group row">
-                            <div class="offset-md-7 col-md-4 pt-3">
+                            <div class=" offset-md-3 col-md-4 pt-3">
+                            <!--UPDATE CREDITS BUTTON-->
+                                <button type="submit" class="btn btn-block btn-warning " style="color:black">
+                                    <b>Update Credits</b>
+                                </button>
+                            </div>
+                            <div class="offset-md- col-md-4 pt-3">
                                 <button type="submit" class="btn btn-block btn-primary " style="background:">
                                     <b>Save changes </b>
                                 </button>
                             </div>
+
                         </div>
                     </form>
                 
@@ -129,47 +128,33 @@
         </div>
         
     <footer class="footer">
-        <div class="container">
+        <div class="container" style="background:">
            <div class="row justify-content-center">             
                 <div class="col-auto">
                     <p>© Copyright 2017 Maaz Hasan - Coursera Course</p>
                 </div>
            </div>
         </div>
-        </footer>      
-        
-        </div> 
-
-        
+    </footer>              
+</div> 
         <!-- jQuery first, then Tether, then Bootstrap JS. -->
         <script src="node_modules/jquery/dist/jquery.min.js"></script>
         <script src="node_modules/tether/dist/js/tether.min.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-        
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>        
+
         <script>
-/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-}
+            /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+            }
 
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-}
- /*          
-window.onresize = function() {
-    if(event.currentTarget.outerWidth <450){
-        function closeNav();
-    
-    } */
-    
-    
-        </script>
-        
+            /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+            }
 
+        </script>        
     </body>
-
-
 </html>

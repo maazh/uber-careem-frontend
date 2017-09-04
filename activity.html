@@ -1,51 +1,36 @@
 <html>
-
     <head>
             <!-- Required meta tags always come first -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <script src="conic-gradient.js"></script>
-        
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="node_modules/css/bootstrap-social.css">
-        <link href="css/styles.css" rel="stylesheet">
-      <!--  <link href="css/infographicstwo.css" rel="stylesheet"> -->
-        <link href="css/infographicsthree.css" rel="stylesheet">
-        
+        <link href="css/styles.css" rel="stylesheet">        
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
         <title>Capstone project | Activity</title>
-        
     </head>
-
-    <body onload="openNav()">
-        
+    <!-- The onload with trigger the navigation bar on the right to open. -->
+    <body onload="openNav()">        
         <div id="mySidenav" class="sidenav">
-                
+            <!-- Navigation bar image is the avatar/image of the current user of the account -->
             <img id="logoImage" src="img/me.jpg" class="img-responsive rounded-circle" alt="Profile logo"  >
-            
-
-            <h5 class="px-4" style="text-align:center; color:white; margin-top:-25; line-height: 1.25;">Hi Maaz,<br><small> Your current credit is</small> <br><h3 style="text-align:center; color:white;">PKR 2000.</h3></h5>
-            
+            <!-- Welcome message, along with information of the credits avaliable in the users account -->
+            <h5 class="px-4" style="text-align:center; color:white; margin-top:-25; line-height: 1.25;">Hi Maaz,<br><small> Your current credit is</small> <br><h3 style="text-align:center; color:salmon;">PKR 2000.</h3></h5>
             <h5 class="px-4" style="text-align:center; color:white; margin-top:-25; margin-bottom:20px; line-height: 1.25;"><br><small> Click <em>here</em> to update.</small></h5>
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
           <a href="index.html">Home</a>
           <a href="#" style="color:navajowhite">Activity</a>
-          <a href="#">Settings</a>
-          <a href="#">Copyright</a>
+          <a href="settings.html">Settings</a>
+          <a href="copyright.html">Copyright</a>
         </div>
-
-        <!-- Use any element to open the sidenav 
-        <span onclick="openNav()">open</span>-->
-
-        <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-        
-        
-        <div id="main">
-                
+  
+    <!--This div "main" contains all the content of the website apart from the navigation bar. It needs to be seperatly
+        created so that the navigation bar is independent from the content-->        
+    <div id="main">                
         <div class="container ">
+            <!--Main top slider-->
             <div class="row row-header">
                 <div class="col"> 
                     <div class="row ">
@@ -62,8 +47,7 @@
                                     <img class="img-responsive" style=""src="img/resize-2.jpg"  alt="header1">
                                     <div class="carousel-caption">
                                         <h3 id="carouselCaptionB">We operate 24/7</h3>
-                                        <p style="    margin-top: -10; color: #ffff00;
-    margin-left: -40;">Give us a call.</p>
+                                        <p style="margin-top: -10; color: #ffff00; margin-left: -40;">Give us a call.</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item  ">
@@ -73,12 +57,9 @@
                                         <p style=" margin-top: -10; margin-left: 79; color: #660000;">Our packages are customized per <em>your</em> needs.</p> 
                                     </div>
                                 </div>
-
-                                
-
                             </div>
                         </div>
-                        
+                        <!--Carousel control buttons-->
                         <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon"></span>
                         </a>
@@ -87,12 +68,14 @@
                         </a>
                     </div>
                 </div>
-
             </div>
         </div>
                         
     <div class="container" style=""> 
         <div class="row row-content">
+            <!--Accordian comtains sample data of the users past experiences along with additional details. Please note
+                that though currently some variations in the data have been provided so that the content appears to be diversified. However, other pages ahead shall contain the same content, with little to no changes. I see 
+                no point in doing redundant work where plaeholdertext is only being changed. -->
             <div class="col-12 col-md-8">
                 <h4>Your recent history</h4>
                 <div id="accordion" role="tablist" aria-multiselectable="true">
@@ -119,6 +102,9 @@
                             </div>
                           </div>
                           <div class="row px-3">
+                             <!--Google Map embed. The idea is that this shows the pickupp and dropoff location of the user.
+                                    However, creating a real interactive map at this point appears to be difficult.-->
+
                               <div class="embed-responsive embed-responsive-1by1 mt-2" style="max-height:100; ">
                                     <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.0644555280364!2d-118.49936668496669!3d34.01655642705769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2a4cfc4670c17%3A0xc552fab1a532027b!2sThird+Street+Promenade!5e0!3m2!1sen!2s!4v1504490821302" ></iframe>
                               </div>
@@ -169,10 +155,7 @@
                                 <h2>Captain Smith Adams</h2>
                                 <h3>+92 125 32552</h3>
                                 <h3>Red Toyata Corrolla ACQ-1211</h3>
-                                
-                            
                             </div>
-                            
                             <div class="col flex-last offset-5 align-self-end">
                                 <button class="btn btn-sm btn-primary ">Print Receipt</button>  
                             
@@ -203,6 +186,8 @@
                                   <span class="fa fa-map-marker" ></span> Omar travelled <b>15 kms</b> in <b>23 mins</b></p>
                             </div>
                           </div>
+                             <!--Google Map embed. The idea is that this shows the pickupp and dropoff location of the user.
+                                    However, creating a real interactive map at this point appears to be difficult.-->
                           <div class="row px-3">
                               <div class="embed-responsive embed-responsive-1by1 mt-2" style="max-height:100; ">
                                     <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.0644555280364!2d-118.49936668496669!3d34.01655642705769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2a4cfc4670c17%3A0xc552fab1a532027b!2sThird+Street+Promenade!5e0!3m2!1sen!2s!4v1504490821302" ></iframe>
@@ -224,7 +209,6 @@
                                 <h3><span class="fa fa-location-arrow" style="color:darkblue"></span> Home.
                                 </h3>
                             </div>
-                          
                           </div>
                           <div class="row pt-2">
                              <div class="col-4 past-rides">
@@ -239,9 +223,9 @@
                               <div class="col-4 past-rides" style="align-content-left">
                                     <h2>Captian Rating:</h2>
                                     <span class="fa fa-star" style="color:gold"></span>
-                                  <span class="fa fa-star" style="color:gold"></span>
-                                  <span class="fa fa-star" style="color:gold"></span>
-                                  <span class="fa fa-star" style="color:gold"></span>
+                                    <span class="fa fa-star" style="color:gold"></span>
+                                    <span class="fa fa-star" style="color:gold"></span>
+                                    <span class="fa fa-star" style="color:gold"></span>
                               
                               </div>
                           </div>
@@ -252,16 +236,11 @@
                             <div class="col- past-rides ml-2 my-3">
                                 <h2>Captain Alexander Khislkova</h2>
                                 <h3>+22 133 32552</h3>
-                                <h3>Yellow Suzuki Mehran BSA-232</h3>
-                                
-                            
+                                <h3>Yellow Suzuki Mehran BSA-232</h3>   
                             </div>
-                            
                             <div class="col flex-last offset-4 align-self-end">
-                                <button class="btn btn-sm btn-primary ">Print Receipt</button>  
-                            
+                                <button class="btn btn-sm btn-primary ">Print Receipt</button>
                             </div>
-                          
                           </div>
                       </div>
                     </div>
@@ -288,6 +267,8 @@
                             </div>
                           </div>
                           <div class="row px-3">
+                             <!--Google Map embed. The idea is that this shows the pickupp and dropoff location of the user.
+                                    However, creating a real interactive map at this point appears to be difficult.-->
                               <div class="embed-responsive embed-responsive-1by1 mt-2" style="max-height:100; ">
                                     <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.0644555280364!2d-118.49936668496669!3d34.01655642705769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2a4cfc4670c17%3A0xc552fab1a532027b!2sThird+Street+Promenade!5e0!3m2!1sen!2s!4v1504490821302" ></iframe>
                               </div>
@@ -308,7 +289,6 @@
                                 <h3><span class="fa fa-location-arrow" style="color:darkblue"></span> Home.
                                 </h3>
                             </div>
-                          
                           </div>
                           <div class="row pt-2">
                              <div class="col-4 past-rides">
@@ -338,22 +318,19 @@
                                 <h2>Captain Aleya Jane</h2>
                                 <h3>+45 552 252</h3>
                                 <h3>Black Nissan X-tera GHS-221</h3>
-                                
-                            
                             </div>
-                            
                             <div class="col flex-last offset-5 align-self-end">
-                                <button class="btn btn-sm btn-primary ">Print Receipt</button>  
-                            
+                                <button class="btn btn-sm btn-primary ">Print Receipt</button> 
                             </div>
-                          
+                              
                           </div>
                       </div>
                     </div>
                   </div>
                 </div>
+                
                 <div class="row">
-
+            <!--Update account credits buttons. On clicking, the idea would be that a pop-up opens with interactive JQUERY and JS which allows user to update credits.-->
                     <div class="col my-2">
                     <button class="btn btn-lg btn-warning btn-block" style="color:black; font-weight:600;">Your current credit is PKR 2000/-. Click to add more credits</button>
                     </div>
@@ -361,7 +338,7 @@
                 </div>
             </div>
             
-            
+            <!--This coloum contains infographics similar to those of the home page with minor CSS changes. They are vertically stacked on each other due to the creation of mutiple row divs-->
             <div class="col-12 col-md-3 mx-4"> 
                 <div class="row">
                        <div class="info-graphic">
@@ -407,7 +384,9 @@
                 </div>
                 
             </div>
-        </div>    
+        </div>
+            <!--GOOGLE MAP INTEGRATION. The idea being that the map shall show the most visited locations the user has been to thus giving the user a brief idea of his travel information in an interactive and engaging way.
+                    -->    
         <div class="row row-content">
             <div class="col-sm-6 ">
                   <div class="row px-3">
@@ -419,14 +398,18 @@
             </div>
             
             <div class="col-sm-6">
-                <h3 style="    padding-bottom: 10">Checkup on my family</h3>
+            <!--This feature, same as that on the home page, allows the current user to be given/delegated access to other users such as his family-members/acquaintances so that the user an access the account and keep tabs, update the credits etc.
+                This is particularly useful in regions which crime is high and parents/loved ones need to keep a check on their
+                childrens/friends/relatives whereabbouts.
+                    -->
+                <h3 style="padding-bottom: 10">Checkup on my family</h3>
                 <div class="row">
                     <div class="col-sm-4 ">
                       <div class="thumbnail">
                         <img src="img/mom.jpg" class="img-thumbnail" alt="">
                           <div class="caption" style="text-align:center;">
                             <h5 style="padding-top:10px; " >Dhillya Safiya <small>/ Wife</small></h5>
-                            <a href="#" style="" class="btn btn-info btn-sm" role="button">Access</a>
+                            <a href="activity-mom.html" style="" class="btn btn-info btn-sm" role="button">Access</a>
                         </div>
                       </div>
                     </div>
@@ -435,7 +418,7 @@
                         <img src="img/son-2.jpg" class="img-thumbnail" alt="">
                           <div class="caption" style="text-align:center;">
                             <h5 style="padding-top:10px; " >Omar Akhtar <small>/ Son</small></h5>
-                            <a href="#" style="" class="btn btn-info btn-sm" role="button">Access</a>
+                            <a href="activity-son.html" style="" class="btn btn-info btn-sm" role="button">Access</a>
                         </div>
                       </div>
                     </div>
@@ -444,7 +427,7 @@
                         <img src="img/daughter-2.jpg" class="img-thumbnail" alt="">
                           <div class="caption" style="text-align:center;">
                             <h5 style="padding-top:10px; " >Camila Jenkins <small>/ Daughter</small></h5>
-                            <a href="#" style="" class="btn btn-info btn-sm" role="button">Access</a>
+                            <a href="activity-daughter.html" style="" class="btn btn-info btn-sm" role="button">Access</a>
                         </div>
                       </div>
                     </div>
@@ -502,20 +485,22 @@
                 
                 <div class="col-12 col-md-4" style="margin-left:-10px"> 
                     <div class="row ml-2 mr-2 mt-2">
+                    <!--Credit alert. No hyperlink on a tag since there is currently no link to be referenced avaliable.-->
                         <div class="alert alert-success">
                           <strong>Your total credits</strong> are PKR 2000/-. Click<a href="#" class="alert-link"> here </a> to update your credits.
                         </div>
                     </div>
                     <div class="row ml-2">
-                        
+                    <!--Company info. (Dummy info)-->
                         <legend>Reach us at:</legend>
                         <address>
                           789, Attabad Cottage Road<br>
                           Hunza, Gilgit-Baltistan<br>
                           Pakistan<br>
-                          <i class="fa fa-phone fa-lg"></i>: +92 45 324 235<br>
-                          <i class="fa fa-fax fa-lg"></i>: +92 45 335 323<br>
-                          <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:taxi@taxi.com">taxi@taxi.com</a>
+                          <i class="fa fa-phone fa-lg" style="color:darkblue"></i>: +92 45 324 235<br>
+                          <i class="fa fa-fax fa-lg" style="color:darkblue"></i>: +92 45 335 323<br>
+                          <i class="fa fa-envelope fa-lg" style="color:darkblue"></i>:
+                            <a href="mailto:taxi@taxi.com">taxi@taxi.com</a>
                        </address>
                         
                     </div>
@@ -528,40 +513,24 @@
                 </div>
            </div>
         </div>
-        </footer>      
-        
-        </div> 
-
-        
+        </footer>
+    </div> 
         <!-- jQuery first, then Tether, then Bootstrap JS. -->
         <script src="node_modules/jquery/dist/jquery.min.js"></script>
         <script src="node_modules/tether/dist/js/tether.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
         
         <script>
-/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-}
-
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-}
- /*          
-window.onresize = function() {
-    if(event.currentTarget.outerWidth <450){
-        function closeNav();
-    
-    } */
-    
-    
-        </script>
-        
-
+            /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+            }
+            /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+            }
+        </script>        
     </body>
-
-
 </html>

@@ -1,54 +1,45 @@
 <html>
-
     <head>
             <!-- Required meta tags always come first -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <script src="conic-gradient.js"></script>
         
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="node_modules/css/bootstrap-social.css">
         <link href="css/styles.css" rel="stylesheet">
-      <!--  <link href="css/infographicstwo.css" rel="stylesheet"> -->
-        <link href="css/infographicsthree.css" rel="stylesheet">
         
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Capstone project</title>
-        
+        <title>Capstone project</title>  
     </head>
 
-    <body onload="openNav()">
-        
+    <!-- The onload with trigger the navigation bar on the right to open. -->
+    <body onload="openNav()">        
         <div id="mySidenav" class="sidenav">
-                
+            <!-- Navigation bar image is the avatar/image of the current user of the account -->
             <img id="logoImage" src="img/me.jpg" class="img-responsive rounded-circle" alt="Profile logo"  >
-            
-
-            <h5 class="px-4" style="text-align:center; color:white; margin-top:-25; line-height: 1.25;">Hi Maaz,<br><small> Your current credit is</small> <br><h3 style="text-align:center; color:white;">PKR 2000.</h3></h5>
-            
+            <!-- Welcome message, along with information of the credits avaliable in the users account -->
+            <h5 class="px-4" style="text-align:center; color:white; margin-top:-25; line-height: 1.25;">Hi Maaz,<br><small> Your current credit is</small> <br><h3 style="text-align:center; color:salmon;">PKR 2000.</h3></h5>
             <h5 class="px-4" style="text-align:center; color:white; margin-top:-25; margin-bottom:20px; line-height: 1.25;"><br><small> Click <em>here</em> to update.</small></h5>
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
-          <a href="#" style="color:navajowhite">Home</a>
-          <a href="">Activity</a>
-          <a href="#">Settings</a>
-          <a href="#">Copyright</a>
+            
+            <!-- Typical menu bar: The color:navajowhite indicates active link --> 
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>    
+              <a href="#" style="color:navajowhite">Home</a>
+              <a href="activity.html">Activity</a>
+              <a href="settings.html">Settings</a>
+              <a href="copyright.html">Copyright</a>
         </div>
-
-        <!-- Use any element to open the sidenav 
-        <span onclick="openNav()">open</span>-->
-
-        <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
         
-        
+        <!--This div "main" contains all the content of the website apart from the navigation bar. It needs to be seperatly
+            created so that the navigation bar is independent from the content-->
         <div id="main">
                 
         <div class="container ">
+            <!--Main top slider-->
             <div class="row row-header">
                 <div class="col"> 
-                    <div class="row ">
+                    <div class="row">
                         <div id="mycarousel" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner " role="listbox">
                                 <div class="carousel-item active ">
@@ -62,8 +53,7 @@
                                     <img class="img-responsive" style=""src="img/resize-2.jpg"  alt="header1">
                                     <div class="carousel-caption">
                                         <h3 id="carouselCaptionB">We operate 24/7</h3>
-                                        <p style="    margin-top: -10; color: #ffff00;
-    margin-left: -40;">Give us a call.</p>
+                                        <p style="margin-top: -10; color: #ffff00;margin-left: -40;">Give us a call.</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item  ">
@@ -73,12 +63,10 @@
                                         <p style=" margin-top: -10; margin-left: 79; color: #660000;">Our packages are customized per <em>your</em> needs.</p> 
                                     </div>
                                 </div>
-
-                                
-
                             </div>
                         </div>
                         
+                        <!--Carousel control buttons-->
                         <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon"></span>
                         </a>
@@ -94,6 +82,8 @@
     <div class="container" style=""> 
         <div class="row row-content">
             <div class="col-12 col-md-6">
+                <!--Contains the code for the form where the user inputs its desired location to go. Contains two tabs
+                    elaborated later-->
                 <h4>Where would you like to go?</h4>
                 <form class="form-horizontal">
                     <div class="form-group row">
@@ -110,6 +100,10 @@
                     </div>
                     <div class=" row">
                         <div class="col-10">
+                            <!--"Select Ride" tab allows the user to select the ride according to the users own preferences
+                                "Surprise Me" - The idea behind this is to take in the appropriate requirments of the user and
+                                    suggest a package/car-type best fitted for the users needs
+                                -->
                             <ul class="nav nav-tabs">
                               <li class="nav-item ">
                                   <a class="nav-link active" role="tab" data-toggle="tab" href="#selectRide">
@@ -122,12 +116,12 @@
 
                             </ul>
                           <div class="tab-content">
-                              <!--What is collapse used for then-->
                             <div id="selectRide" class="tab-pane fade in active show">
                                 <div class="form-group row justify-content-center">
                                     <label for="carType" class="col-12 col-form-label">
                                         Car Type
                                     </label>
+                                    <!--Three types of cars to choose from-->
                                     <div class="btn-group col- " role="group" data-toggle="buttons">
                                         <label class="btn btn-danger ">
                                             <input type="radio" name="carType" id="Economy" autocomplete="off" checked>Economy
@@ -148,10 +142,11 @@
                                 </div>
                             </div>
                             <div id="surpriseMe" class="tab-pane fade">
+                                <!--Allows the user to input their preferences so that the program can later
+                                    suggest the best car package for the user according to its choices-->
                                 <div class="form-group row">
-                                    
                                     <label for="carInternet" class=" col-md-4 col-form-label">
-                                    I would like a car: 
+                                        I would like a car: 
                                     </label>
                                     <label for="carInternetYes" class="col-md-3 col-form-label">
                                         <input class="form-check-input" type="radio" name="carInternetYes" id="carInternetYes" value="carInternetYes"> With Wifi
@@ -159,7 +154,6 @@
                                     <label for="carInternetNo" class=" col-md-4 col-form-label">
                                         <input class="form-check-input" type="radio" name="carInternetNo" id="carInternetNo" value="carInternetNo"> Without Wifi
                                     </label>
-                                
                                 </div>
                                 <div class="form-group row">
                                     <label for="priceRange" class="col-md-4 col-form-label">
@@ -171,7 +165,6 @@
                                             <option>Affordable</option>
                                             <option>Reasonably Expensive</option>
                                             <option>I'm willing to splurge!</option>
-
                                         </select>
                                     </div>
                                 </div>
@@ -211,32 +204,34 @@
                                 </div>
                             </div>
                           </div>
-
-                            
-                            
                         </div>
                     </div>
-                    
-                
                 </form>
-            
             </div>
             
-            
-            <div class="col-12 col-md-6">        
+            <div class="col-12 col-md-6"> 
+            <!--This div contains a graph which highlights the "surge rates" of the different car packages according to the
+                cars avaliablity and demand at that particular time. If the car package is high in demand at that time, it
+                would be more expensive, and visa versa.
+
+            IMPORTANT: PLEASE NOTE THAT THE CSS CODE HAS BEEN TAKEN FROM THE INTERNET BUT MULTIPLE CHANGES TO THE CODE HAVE
+                        BEEN MADE AS TO CUSTOMIZE THE GRAPH PER THE WEB-APPS REQUIRMENTS. NO COPYRIGHT INFRINGMENTS WERE MADE. YOU CAN FIND THE SOURCE CODE AT https://css-tricks.com/making-charts-with-css/
+
+                        CREATING A GRAPH FROM SCRATCH USING HTML AND CSS WAS BEYOND MY SKILL LEVEL AND THE SCOPE OF THIS PROJECT. HENCE, I HAVE LIFTED THE CODE FROM ELSEWHERE, GIVING IT DUE CREDIT ABOVE AND HAVE MADE RELAVENT CHANGES TO IT.
+                    -->
                     <div class="row" style="">
                         <h4>Surge Rates</h4>
                         <table id="q-graph">
                         <thead style="position:absolute; top:30; right:230">
                         <tr>
-                        
+                        <!--CAR TYPES LEGEND-->
                         <th class="sent">Economy</th>
                         <th class="paid">Business</th>
                         <th class="luxury">Professional</th>    
                         </tr>
                         </thead>
                         <tbody>
-                            
+                        <!--STYLING AND DISPLAYING OF THE GRAPH-->
                         <tr class="qtr" id="q1">
                         <th scope="row">Morning 7 to 11 AM</th>
                         <td class="sent bar" style="height: 111px;"><p>$4.7</p></td>
@@ -268,7 +263,7 @@
                         </tr>
                         </tbody>
                         </table>
-
+                        <!--Stying of the vertical axis-->
                         <div id="ticks">
                         <div class="tick" style="height: 59px;"><p>$7</p></div>
                         <div class="tick" style="height: 59px;"><p>$6</p></div>
@@ -284,6 +279,9 @@
             
         <div class="jumbotron">
             <div class="container">
+                <!--This jumbotron contains 4 Boxes of infographics which give a brief summary of the user's activities in an engaging
+                    and interactive way. Extensive CSS was used whose code shall be elaborated in the style sheet only.
+                    -->
                 <div class="row" style="">
                     <div class="col-12 col-md-3">
                        <div class="info-graphic">
@@ -330,25 +328,20 @@
             </div>
         </div>
         <div class="row row-content">
+            <!--An accordian which contains images of latest promotions and offers marketed by the company.-->
             <div class="col-sm-6 ">
                     <div class="align-self-center">
                         <div id="promotions" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner " role="listbox">
                                 <div class="carousel-item active ">
                                     <img class="img-responsive" style=""src="img/slide1.jpg"  alt="slide1">
- 
                                 </div>
                                 <div class="carousel-item">
                                     <img class="img-responsive" style=""src="img/slide3.jpg"  alt="slide2">
-
                                 </div>
                                 <div class="carousel-item  ">
                                     <img class="img-responsive" style=""src="img/slide2.jpg"  alt="slide">
-
                                 </div>
-
-                                
-
                             </div>
                         </div>
                         <ol class="carousel-indicators">
@@ -361,14 +354,21 @@
             </div>
             
             <div class="col-sm-6">
-                <h3 style="    padding-bottom: 10">Checkup on my family</h3>
+            <!--This feature allows the current user to be given/delegated access to other users such as his family-
+                members/acquaintances so that the user an access the account and keep tabs, update the credits etc.
+
+                This is particularly useful in regions which crime is high and parents/loved ones need to keep a check on their
+                childrens/friends/relatives whereabbouts.
+                    -->
+
+                <h3 style="padding-bottom: 10">Checkup on my family</h3>
                 <div class="row">
                     <div class="col-sm-4 ">
                       <div class="thumbnail">
                         <img src="img/mom.jpg" class="img-thumbnail" alt="">
                           <div class="caption" style="text-align:center;">
                             <h5 style="padding-top:10px; " >Dhillya Safiya <small>/ Wife</small></h5>
-                            <a href="#" style="" class="btn btn-info btn-sm" role="button">Access</a>
+                            <a href="activity-mom.html" style="" class="btn btn-info btn-sm" role="button">Access</a>
                         </div>
                       </div>
                     </div>
@@ -377,7 +377,7 @@
                         <img src="img/son-2.jpg" class="img-thumbnail" alt="">
                           <div class="caption" style="text-align:center;">
                             <h5 style="padding-top:10px; " >Omar Akhtar <small>/ Son</small></h5>
-                            <a href="#" style="" class="btn btn-info btn-sm" role="button">Access</a>
+                            <a href="activity-son.html" style="" class="btn btn-info btn-sm" role="button">Access</a>
                         </div>
                       </div>
                     </div>
@@ -386,7 +386,7 @@
                         <img src="img/daughter-2.jpg" class="img-thumbnail" alt="">
                           <div class="caption" style="text-align:center;">
                             <h5 style="padding-top:10px; " >Camila Jenkins <small>/ Daughter</small></h5>
-                            <a href="#" style="" class="btn btn-info btn-sm" role="button">Access</a>
+                            <a href="activity-daughter.html" style="" class="btn btn-info btn-sm" role="button">Access</a>
                         </div>
                       </div>
                     </div>
@@ -401,7 +401,8 @@
             <div class="row"> 
                 
                 <div class="col-12 col-md-8 " style="margin-right:-15px">
-                    
+                 <!--Suggestion/Feedback form-->
+
                     <form class="ml-2">
                         <legend>Complains or Suggestions?</legend>
                         <div class="form-group row">
@@ -444,24 +445,24 @@
                 
                 <div class="col-12 col-md-4" style="margin-left:-10px"> 
                     <div class="row ml-2 mr-2 mt-2">
+                    <!--Credit alert. No hyperlink on a tag since there is currently no link to be referenced avaliable.-->
                         <div class="alert alert-success">
                           <strong>Your total credits</strong> are PKR 2000/-. Click<a href="#" class="alert-link"> here </a> to update your credits.
                         </div>
                     </div>
                     <div class="row ml-2">
-                        
+                    <!--Company info. (Dummy info)-->
                         <legend>Reach us at:</legend>
                         <address>
                           789, Attabad Cottage Road<br>
                           Hunza, Gilgit-Baltistan<br>
                           Pakistan<br>
-                          <i class="fa fa-phone fa-lg"></i>: +92 45 324 235<br>
-                          <i class="fa fa-fax fa-lg"></i>: +92 45 335 323<br>
-                          <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:taxi@taxi.com">taxi@taxi.com</a>
+                          <i class="fa fa-phone fa-lg" style="color:darkblue"></i>: +92 45 324 235<br>
+                          <i class="fa fa-fax fa-lg" style="color:darkblue"></i>: +92 45 335 323<br>
+                          <i class="fa fa-envelope fa-lg" style="color:darkblue"></i>:
+                            <a href="mailto:taxi@taxi.com">taxi@taxi.com</a>
                        </address>
-                        
                     </div>
-                
                 </div>
            </div>
            <div class="row justify-content-center">             
@@ -470,40 +471,27 @@
                 </div>
            </div>
         </div>
-        </footer>      
-        
-        </div> 
+        </footer> 
+    </div> 
 
-        
         <!-- jQuery first, then Tether, then Bootstrap JS. -->
         <script src="node_modules/jquery/dist/jquery.min.js"></script>
         <script src="node_modules/tether/dist/js/tether.min.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-        
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>        
         <script>
-/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-}
+            /* Set the width of the side navigation to 250px and the left margin of the page content to 250px. Help taken
+            from the internet to solve.*/
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+            }
 
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-}
- /*          
-window.onresize = function() {
-    if(event.currentTarget.outerWidth <450){
-        function closeNav();
-    
-    } */
-    
-    
+            /* Set the width of the side navigation to 0 and the left margin of the page content to 0. Help taken
+            from the internet to solve.*/
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+            }
         </script>
-        
-
     </body>
-
-
 </html>

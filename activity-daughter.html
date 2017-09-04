@@ -1,54 +1,38 @@
 <html>
-
     <head>
             <!-- Required meta tags always come first -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <script src="conic-gradient.js"></script>
         
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="node_modules/css/bootstrap-social.css">
         <link href="css/styles.css" rel="stylesheet">
-      <!--  <link href="css/infographicstwo.css" rel="stylesheet"> -->
-        <link href="css/infographicsthree.css" rel="stylesheet">
         
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Capstone project | Camila's Activity</title>
         
     </head>
-
+    <!-- The onload with trigger the navigation bar on the right to open. -->
     <body onload="openNav()">
-        
         <div id="mySidenav" class="sidenav">
-                
+            <!-- Navigation bar image is the avatar/image of the current user of whoms page/activity page is being accessed -->
             <img id="logoImage" src="img/daughter-2.jpg" class="img-responsive rounded-circle" alt="Profile logo"  >
-            
-
-            <h5 class="px-4" style="text-align:center; color:white; margin-top:-25; line-height: 1.25;">Hi Maaz,<br>You are currently accessing Camila's account.</h5>
-            
+            <!-- Welcome message, notifiying user of whose account he/she is currently accessing -->
+            <h5 class="px-3" style="text-align:center; color:white; margin-top:-20; line-height: 1.25;">Hi Maaz,<br>You are currently accessing Camila's account.</h5>
             
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
-          <a href="index.html">Home</a>
-          <a href="activity.html">Activity</a>
-            <a href="activity-mom.html" class="ml-4 my-0 py-0" style="color:; font-size:20">-- Dhilla</a>
-            <a href="activity-son.html" class="ml-4 my-0 py-0" style="color:; font-size:20">-- Omar</a>
-            <a href="activity-daughter.html" class="ml-4 my-0 py-0" style="color:navajowhite; font-size:20">-- Camila</a>
-
-          <a href="settings.html">Settings</a>
-          <a href="copyright.html">Copyright</a>
+          <a href="index.html" class="pt-0">Home</a>
+          <a href="activity.html" class="pt-0">Activity</a>
+            <a href="activity-mom.html" class="ml-4 my-0 py-0" style="color:; font-size:18"><i class="fa fa-caret-right" style="color:"></i> Dhilla</a>
+            <a href="activity-son.html" class="ml-4 my-0 py-0" style="color:; font-size:18"><i class="fa fa-caret-right" style="color:"></i> Omar</a>
+            <a href="activity-daughter.html" class="ml-4 my-0 py-0" style="color:navajowhite; font-size:18"><i class="fa fa-caret-right" style="colornavajowhite:"></i> Camila</a>
+          <a href="settings.html" class="pt-0">Settings</a>
+          <a href="copyright.html" class="pt-0">Copyright</a>
         </div>
-
-        <!-- Use any element to open the sidenav 
-        <span onclick="openNav()">open</span>-->
-
-        <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-        
-        
-        <div id="main">
-                
+        <!-- This page gives the user access to his delegated family members account so that he can track their movement, records, etc. and help them if need be. The layout of this page is almost completly similar to that of the activity page in terms of the elements present. -->
+     <div id="main">            
         <div class="container ">
             <div class="row row-header">
                 <div class="col"> 
@@ -77,9 +61,6 @@
                                         <p style=" margin-top: -10; margin-left: 79; color: #660000;">Our packages are customized per <em>your</em> needs.</p> 
                                     </div>
                                 </div>
-
-                                
-
                             </div>
                         </div>
                         
@@ -173,15 +154,11 @@
                                 <h2>Captain Smith Adams</h2>
                                 <h3>+92 125 32552</h3>
                                 <h3>Red Toyata Corrolla ACQ-1211</h3>
-                                
-                            
                             </div>
                             
                             <div class="col flex-last offset-5 align-self-end">
-                                <button class="btn btn-sm btn-primary ">Print Receipt</button>  
-                            
+                                <button class="btn btn-sm btn-primary ">Print Receipt</button>                              
                             </div>
-                          
                           </div>
                       </div>
                     </div>
@@ -256,16 +233,11 @@
                             <div class="col- past-rides ml-2 my-3">
                                 <h2>Captain Alexander Khislkova</h2>
                                 <h3>+22 133 32552</h3>
-                                <h3>Yellow Suzuki Mehran BSA-232</h3>
-                                
-                            
+                                <h3>Yellow Suzuki Mehran BSA-232</h3>                            
                             </div>
-                            
                             <div class="col flex-last offset-4 align-self-end">
                                 <button class="btn btn-sm btn-primary ">Print Receipt</button>  
-                            
-                            </div>
-                          
+                            </div>                          
                           </div>
                       </div>
                     </div>
@@ -342,30 +314,25 @@
                                 <h2>Captain Aleya Jane</h2>
                                 <h3>+45 552 252</h3>
                                 <h3>Black Nissan X-tera GHS-221</h3>
-                                
-                            
                             </div>
                             
                             <div class="col flex-last offset-5 align-self-end">
                                 <button class="btn btn-sm btn-primary ">Print Receipt</button>  
-                            
                             </div>
-                          
                           </div>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="row">
-
                     <div class="col my-2">
+                        <!--BUTTON TO ADD CREDITS ONTO THE DELEGATED ACCOUNT-->
                     <button class="btn btn-lg btn-warning btn-block" style="color:black; font-weight:600;">Camila's current credit is PKR 1400/-. Click to add more credits</button>
                     </div>
                 
                 </div>
             </div>
-            
-            
+  <!--Infographics-->                      
             <div class="col-12 col-md-3 mx-4"> 
                 <div class="row">
                        <div class="info-graphic">
@@ -412,15 +379,11 @@
                 
             </div>
         </div>    
+        <!--This google map attempts to show the most visited locations of the mentioned user in an interactive way.-->
         <div class="row ">
-                  
             <div class="embed-responsive embed-responsive-1by1 mt-2" style="max-height:300; ">
                     <iframe class="embed-responsive-item" src="https://www.google.com/maps/d/embed?mid=1IoiNYiIYHkzSt0CqCrrajQdWilY" ></iframe>
             </div>
-                  
-                
-            
-            
         </div>
     </div>
         
@@ -432,40 +395,25 @@
                 </div>
            </div>
         </div>
-        </footer>      
-        
-        </div> 
-
-        
+    </footer>      
+</div>         
         <!-- jQuery first, then Tether, then Bootstrap JS. -->
         <script src="node_modules/jquery/dist/jquery.min.js"></script>
         <script src="node_modules/tether/dist/js/tether.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-        
+
         <script>
-/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-}
+            /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+            }
 
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-}
- /*          
-window.onresize = function() {
-    if(event.currentTarget.outerWidth <450){
-        function closeNav();
-    
-    } */
-    
-    
+            /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+            }    
         </script>
-        
-
     </body>
-
-
 </html>

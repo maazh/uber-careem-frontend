@@ -1,78 +1,6 @@
-.navbar-inverse {
-  background-color: #512DA8; }
-
-.navbar{
-    height: 150px;
-    
-}
-
-body {
-    padding: 0px 0px 0px 0px;
-    z-index: 0; 
-    margin: 0;
-       /*done for image to prevent horizontal scroll bar*/
-
-    overflow-x: hidden;
-    
-    /* */
-
-}
-
-.carousel-caption {
-    top: 80;
-    left: -1000;
-    bottom: auto;
-    text-decoration: none;
-    color: black;
-    font-weight:900;
-    
-    
-}
-
-#carouselCaptionA {
-
-    color: #000033;
-    font-weight:2000;
-    font-size: 44px;
-     
-    
-    
-}
-#carouselCaptionB {
-    margin-top: -25;
-    color: #ffff00;
-    margin-left: ;
-    font-weight:2000;
-    font-size: 44px;
-    
-    
-}
-
-#carouselCaptionC {
-    margin-top: -25;
-    margin-left: 79;
-    color: #660000;
-    font-weight:4000;
-    font-stretch: semi-expanded;
-    font-size: 44px;
-     
-    
-    
-}
-
-
- .carousel .item {
- }
- .carousel .item img {
-    max-width: 100%;
-    max-height: 100%;
- }
  .container {
    width: 100%;
-
  }
-
-
 
 .row-content {
   margin: 0px auto;
@@ -83,20 +11,73 @@ body {
 }
 
 .footer {
-  background-color: #D1C4E9;
+  background-color: deepskyblue;
   margin: 0px auto;
-  padding: 20px 0px; }
+  padding: 20px 0px; 
+}
 
 .jumbotron {
-  
   background: #9575CD;
-  color: floralwhite; }
+  color: floralwhite; 
+}
 
 .bosom-none {
     margin-right: -15px; 
     margin-left: -15px;  
 }
 
+.navbar-inverse {
+  background-color: #512DA8; 
+}
+
+.navbar{
+    height: 150px;
+}
+
+body {
+    padding: 0px 0px 0px 0px;
+    z-index: 0; 
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Defines the location, font-size, color etc. of the text/caption present in the carousel/top-page slider*/
+.carousel-caption {
+    top: 80;
+    left: -1000;
+    bottom: auto;
+    text-decoration: none;
+    color: black;
+    font-weight:900;
+}
+
+#carouselCaptionA {
+    color: #000033;
+    font-weight:2000;
+    font-size: 44px;
+}
+
+#carouselCaptionB {
+    margin-top: -25;
+    color: #ffff00;
+    margin-left: ;
+    font-weight:2000;
+    font-size: 44px;    
+}
+
+#carouselCaptionC {
+    margin-top: -25;
+    margin-left: 79;
+    color: #660000;
+    font-weight:4000;
+    font-stretch: semi-expanded;
+    font-size: 44px;
+}
+
+.carousel .item img {
+    max-width: 100%;
+    max-height: 100%;
+ }
 .no-spacing-a {
     margin-left: -15px;
     padding-left: 0;
@@ -106,9 +87,7 @@ body {
 }
 
 
-
-
-/* The side navigation menu */
+/* The side navigation menu. Help taken from tutorialpoint */
 .sidenav {
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
@@ -121,18 +100,16 @@ body {
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
-
+/*Settings of the image in the main navigation bar*/
 .sidenav img {
-    
     width: 70%;
     vertical-align: middle;
     display: block;
     margin: 0 auto;
-    
 }
 
+/*Position of the image in the main navigation bar*/
 #logoImage{
-    
     padding-bottom: 20%;
 }
 
@@ -148,7 +125,7 @@ body {
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
+    color:navajowhite;
 }
 
 /* Position and style the close button (top right corner) */
@@ -160,8 +137,6 @@ body {
     margin-left: 50px;
 }
 
-
-/* IMPORTANT PADDNG: 20PX BELOW LOOKS SPLENDING TOO. TRY LATER */
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
     transition: margin-left .5s;
@@ -173,20 +148,13 @@ body {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
-/*
-@media only screen and (max-width: 450px) { 
-  #mysidenav { 
-    display: none;
-    
-  }
-#main{
-        
-    
-    }
-    
-} */
 
-/* TABLE CLASSES */ 
+
+/* TABLE CLASSES. 
+    THIS CODE WAS TAKEN FROM https://css-tricks.com/making-charts-with-css/
+    The intention was/is not to copy/paste but to add interactivity within the page using such charts. Hence the code was extensively modified and customized to fit according to the requirments of this webapp.
+*/ 
+
 #q-graph {
   display: block;
   /* fixes layout wonkiness in FF1.5 */
@@ -260,7 +228,6 @@ body {
   line-height: 2;
   left: 0;
 }
-
 
 
 #q-graph tbody tr {
@@ -360,13 +327,12 @@ body {
     
 }
 
-
 .thumbnail img {
     width: 100%;
     margin-bottom: 0px;
 }
 
-
+/* FORMATTING AND CSS DONE FOR THE TEXT AND OTHER ELEMENTS FOR THE ACTIVITY PAGE ACCORDIAN*/
 .past-rides h1 {
     font-size: 21;
     font-weight:500;
@@ -394,6 +360,7 @@ body {
     
 }
 
+/* Styles for the Settings page forms fields. */
 .settings-form-label {
     color: #0099cc;
     font-weight: 500;
@@ -407,6 +374,9 @@ body {
     color: darkblue
 
 }
+
+/* Since the placeholder text in the form is always grey in colour. This code attempts to change that i.e color along with
+    other styles so that the placeholder text looks more visually appealing */
 
 ::-webkit-input-placeholder {
  font-size: 14px;
@@ -438,4 +408,196 @@ body {
  text-transform: uppercase;
  text-align: left;
  font-weight: bold;
+}
+
+/*Styles for infographics (BOXES) present in the Home and Activity page */
+.info-graphic {
+    position: relative;
+    width: 100%;
+    background-color: navajowhite;
+    box-shadow: 0px 0px 0px 1px rgba(255,255,255,0.4);
+    
+}
+
+.info-graphic-content {
+    position: relative;
+    background: #FFF;
+    text-align: center;
+    padding: 36px 16px 16px;
+    
+}
+
+/* These will be individually customized per content box. Those on the the top are global and applied to each box while those below are specific to each particular box */
+
+.info-graphic-content__firstBox h4 {
+    font-family:"Noto Sans", Helvetica, Arial, sans-serif;
+    font-weight:800;
+    font-size: 40px;
+    color:#0087be;
+    text-align:center;
+    margin-top: -20px;
+}
+
+.info-graphic-content__firstBox h5 {
+    font-family:"Noto Sans", Helvetica, Arial, sans-serif;
+    font-weight:600;
+    font-size:16px;
+    color:#0087be;
+    font-style: italic;
+    text-align:center;
+    padding-top: -5px;
+    margin-top: -13px;
+    line-height: 1.5;
+}
+
+.info-graphic-content__firstBox p {
+    min-height:0;
+    font-size:15px;
+    font-weight:600;
+    line-height:1.5;
+    color:#0087be!important;
+    padding:0;
+}
+
+
+.info-graphic-content__firstBox{
+    border-bottom: 2px solid blue;    
+}
+
+.info-graphic-content .info-graphic__topImage{
+    position: absolute;
+    top: -36px;
+    left: 0;
+    right: 0;
+    width: 72px;
+    height: 72px;
+    background-size: 72px 72px;
+    margin: 0 auto;
+}
+
+.info-graphic-content__firstBox__firstBoxImage{
+    background-image:url(firstImage.png);
+}
+
+/*Second Box*/
+.info-graphic-content__secondBox h4 {
+    font-family:"Noto Sans", Helvetica, Arial, sans-serif;
+    font-weight:800;
+    font-size: 40px;
+    color:green;
+    text-align:center;
+    margin-top: -20px;
+}
+
+.info-graphic-content__secondBox h5 {
+    font-family:"Noto Sans", Helvetica, Arial, sans-serif;
+    font-weight:600;
+    font-size:16px;
+    color:green;
+    font-style: italic;
+    text-align:center;
+    padding-top: -5px;
+    margin-top: -13px;
+    line-height: 1.5;
+}
+
+
+.info-graphic-content__secondBox p {
+    min-height:0;
+    font-size:15px;
+    font-weight:600;
+    line-height:1.5;
+    color:green;
+    padding:0;
+}
+
+.info-graphic-content__secondBox{
+    border-bottom: 2px solid green;
+}
+
+
+.info-graphic-content__secondBox__secondBoxImage{
+    background-image:url(secondImage.png);
+}
+
+
+/*third Box*/
+.info-graphic-content__thirdBox h4 {
+    font-family:"Noto Sans", Helvetica, Arial, sans-serif;
+    font-weight:800;
+    font-size: 40px;
+    color:darkorange;
+    text-align:center;
+    margin-top: -20px;
+}
+
+.info-graphic-content__thirdBox h5 {
+    font-family:"Noto Sans", Helvetica, Arial, sans-serif;
+    font-weight:600;
+    font-size:16px;
+    color:darkorange;
+    font-style: italic;
+    text-align:center;
+    padding-top: -5px;
+    margin-top: -13px;
+    line-height: 1.5;
+}
+
+
+.info-graphic-content__thirdBox p {
+    min-height:0;
+    font-size:15px;
+    font-weight:600;
+    line-height:1.5;
+    color:darkorange;
+    padding:0;    
+}
+
+.info-graphic-content__thirdBox{
+    border-bottom: 2px solid darkorange; 
+}
+
+
+.info-graphic-content__thirdBox__thirdBoxImage{
+    background-image:url(thirdImage.png);   
+}
+
+/*fourth Box*/
+.info-graphic-content__fourthBox h4 {
+    font-family:"Noto Sans", Helvetica, Arial, sans-serif;
+    font-weight:800;
+    font-size: 40px;
+    color:salmon;
+    text-align:center;
+    margin-top: -20px;
+}
+
+.info-graphic-content__fourthBox h5 {
+    font-family:"Noto Sans", Helvetica, Arial, sans-serif;
+    font-weight:600;
+    font-size:16px;
+    color:salmon;
+    font-style: italic;
+    text-align:center;
+    padding-top: -5px;
+    margin-top: -13px;
+    line-height: 1.5;
+}
+
+.info-graphic-content__fourthBox p {
+    min-height:0;
+    font-size:15px;
+    font-weight:600;
+    line-height:1.5;
+    color:salmon;
+    padding:0;    
+}
+
+.info-graphic-content__fourthBox{
+    border-bottom: 2px solid salmon;
+}
+
+
+.info-graphic-content__fourthBox__fourthBoxImage{
+    background-image:url(fourthImage.png);
 }
