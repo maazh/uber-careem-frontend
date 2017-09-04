@@ -1,0 +1,175 @@
+<html>
+
+    <head>
+            <!-- Required meta tags always come first -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <script src="conic-gradient.js"></script>
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="node_modules/css/bootstrap-social.css">
+        <link href="css/styles.css" rel="stylesheet">
+      <!--  <link href="css/infographicstwo.css" rel="stylesheet"> -->
+        <link href="css/infographicsthree.css" rel="stylesheet">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Capstone project | Settings</title>
+        
+    </head>
+
+    <body onload="openNav()">
+        
+        <div id="mySidenav" class="sidenav">
+                
+            <img id="logoImage" src="img/me.jpg" class="img-responsive rounded-circle" alt="Profile logo"  >
+            
+
+            <h5 class="px-4" style="text-align:center; color:white; margin-top:-25; line-height: 1.25;">Hi Maaz,<br><small> Your current credit is</small> <br><h3 style="text-align:center; color:white;">PKR 2000.</h3></h5>
+            
+            <h5 class="px-4" style="text-align:center; color:white; margin-top:-25; margin-bottom:20px; line-height: 1.25;"><br><small> Click <em>here</em> to update.</small></h5>
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
+          <a href="index.html">Home</a>
+          <a href="activity.html" style="color:">Activity</a>
+          <a href="#" style="color:navajowhite">Settings</a>
+          <a href="copyright.html">Copyright</a>
+        </div>
+
+        <!-- Use any element to open the sidenav 
+        <span onclick="openNav()">open</span>-->
+
+        <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+        
+        
+        <div id="main">
+                
+        <div class="container" style="background:#000033">
+            <div class="row row-content">
+                <div class="col- ml-5 mt-4">
+                    <img src="img/me.jpg" class="img-responsive rounded-circle" alt="Profile logo" width="150">
+                </div>    
+                <div class="col">
+                     <form class="form-horizontal ml-2">
+                        <legend class="settings-form-label  pt-5 pb-0 mb-0" style="font-size:30">Click on the fields to edit changes.</legend>
+                        <legend class=" mt-0 pt-0 mb-4" style="font-weight: 600; font-size:17; color:#0099cc;  "><em>* Click on your avatar on the left to change image.</em></legend>
+
+                        <div class="form-group row pt-3">
+                            <label for="firstname" class="col-md-2 settings-form-label" >
+                                Full Name
+                            </label>
+                            <div class="col-md-9 ">
+                                <input type="text" class="form-control settings-form-field" id="firstname" 
+                                       name="firstname" placeholder="Maaz Hasan">
+                            </div>
+                        </div>
+   
+                        <div class="form-group row  pt-3">
+                            <label for="emailid" class="col-md-2 settings-form-label">
+                                Email
+                            </label>
+                            <div class="col-md-9">
+                                <input type="email" class="form-control settings-form-field" id="emailid" 
+                                       name="emailid" placeholder="maazh@maazhasan.com">
+                            </div>
+                        </div> 
+                         
+                        <div class="form-group row  pt-3">
+                            <label for="secondemailid" class="col-md-2 settings-form-label">
+                                Secondary Email
+                            </label>
+                            <div class="col-md-9">
+                                <input type="email" class="form-control settings-form-field" id="secondemailid" 
+                                       name="secondemailid" placeholder="maazhassan2@gmail.com">
+                            </div>
+                        </div> 
+                         
+                        <div class="form-group row pt-2">
+                            <label for="firstname" class="col-md-2 settings-form-label" >
+                                Mobile 
+                            </label>
+                            <div class="col-md-9 ">
+                                <input type="tel" class="form-control settings-form-field" id="mobile" 
+                                       name="mobile" placeholder="03256452154">
+                            </div>
+                        </div>
+                         
+                        <div class="form-group row pt-3">
+                            <label for="Country" class="col-md-2 settings-form-label" >
+                                Country
+                            </label>
+                            <div class="col-md-9 ">
+                                <input type="text" class="form-control settings-form-field" id="Country" 
+                                       name="Country" placeholder="Pakistan">
+                            </div>
+                        </div>
+                         
+                        <div class="form-group row pt-3">
+                            <label for="password" class="col-md-2 settings-form-label" >
+                                Password
+                            </label>
+                            <div class="col-md-9 ">
+                                <input type="password" class="form-control settings-form-field" id="password" 
+                                       name="password" placeholder="Click to change password">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="offset-md-7 col-md-4 pt-3">
+                                <button type="submit" class="btn btn-block btn-primary " style="background:">
+                                    <b>Save changes </b>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                
+                </div>
+            </div>
+        </div>
+        
+    <footer class="footer">
+        <div class="container">
+           <div class="row justify-content-center">             
+                <div class="col-auto">
+                    <p>© Copyright 2017 Maaz Hasan - Coursera Course</p>
+                </div>
+           </div>
+        </div>
+        </footer>      
+        
+        </div> 
+
+        
+        <!-- jQuery first, then Tether, then Bootstrap JS. -->
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="node_modules/tether/dist/js/tether.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        
+        <script>
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+}
+ /*          
+window.onresize = function() {
+    if(event.currentTarget.outerWidth <450){
+        function closeNav();
+    
+    } */
+    
+    
+        </script>
+        
+
+    </body>
+
+
+</html>

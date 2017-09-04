@@ -394,3 +394,48 @@ body {
     
 }
 
+.settings-form-label {
+    color: #0099cc;
+    font-weight: 500;
+    font-size: 19;
+}
+
+.settings-form-field {
+    background: #6699ff;
+    font-weight: 400;
+    font-size: 17;
+    color: darkblue
+
+}
+
+::-webkit-input-placeholder {
+ font-size: 14px;
+ color: #003366;
+ text-transform: uppercase;
+ text-transform: uppercase;
+ text-align:left;
+ font-weight: bold;
+}
+
+
+:-moz-placeholder { /* older Firefox*/
+ font-size:14px;
+ color: #003366;
+ text-transform: uppercase;
+ text-align: left;
+ font-weight: bold;
+}
+::-moz-placeholder { /* Firefox 19+ */ 
+ font-size: 14px;
+ color: #003366; 
+ text-transform: uppercase;
+ text-align: left;
+ font-weight: bold;
+} 
+:-ms-input-placeholder { 
+ font-size: 14px; 
+ color: #003366;
+ text-transform: uppercase;
+ text-align: left;
+ font-weight: bold;
+}
