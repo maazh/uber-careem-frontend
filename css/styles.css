@@ -476,7 +476,7 @@ body {
 }
 
 .info-graphic-content__firstBox__firstBoxImage{
-    background-image:url(firstImage.png);
+    background-image:url(../img/firstImage.png);
 }
 
 /*Second Box*/
@@ -517,7 +517,7 @@ body {
 
 
 .info-graphic-content__secondBox__secondBoxImage{
-    background-image:url(secondImage.png);
+    background-image:url(../img/secondImage.png);
 }
 
 
@@ -559,7 +559,7 @@ body {
 
 
 .info-graphic-content__thirdBox__thirdBoxImage{
-    background-image:url(thirdImage.png);   
+    background-image:url(../img/thirdImage.png);   
 }
 
 /*fourth Box*/
@@ -599,5 +599,5 @@ body {
 
 
 .info-graphic-content__fourthBox__fourthBoxImage{
-    background-image:url(fourthImage.png);
+    background-image:url(../img/fourthImage.png);
 }
